@@ -1,0 +1,96 @@
+body {
+  background-color: #a00fa8;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', arial;
+}
+
+div.stuck {
+	border-style: double;
+	border-color: white;
+	margin-top: 30px;
+	margin-left: 25%;
+	width: 50%;
+	text-align: center;
+}
+
+.stuck h3{
+	margin-top: 0.5em;
+}
+
+p#foot-text {
+	margin-top: 0%;
+	margin-bottom: 0%;
+	position: absolute;
+	bottom: 3px;
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 572px) and (max-height: 487px) {
+	p#foot-text {
+		color: transparent;
+	}
+}
+
+@media screen and (max-width: 572px) {
+	div.stuck {
+		width: 80%;
+		margin-left: 10%; 
+	}
+}
+
+@media screen and (max-width: 619px) and (max-height: 637px) {
+	p#foot-text {
+		color: transparent;
+	}
+}
+
+@media screen and (max-width: 678px) and (max-height: 507px) {
+	p#foot-text {
+		color: transparent;
+	}
+}
+
+@media screen and (max-width: 755px) and (max-height: 468px) {
+	p#foot-text {
+		color: transparent;
+	}
+}
+
+@media screen and (min-width: 758px) and (max-height: 445px) {
+	p#foot-text {
+		color: transparent;
+	}
+}
+
+@media screen and (max-width: 626px) {
+	.left-of-left {
+		text-align: center;
+	}
+}
+
+ul {
+	overflow: hidden;
+}
+
+div#list {
+	text-align: center;
+}
+
+li {
+/*	display: inline;*/
+	width: 50%;
+}
+
+.left-of-left {
+	text-align: left;
+	float: left;
+}
+
+p {
+	text-align: right;
+}
+/*
+Song_Title{
+  text-align: center;
+}*/

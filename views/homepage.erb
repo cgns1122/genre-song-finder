@@ -1,0 +1,46 @@
+<!doctype html>
+	<head> 
+		<link rel="shortcut icon" href="images/note.ico">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<title>Genre Song Finder</title>
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body id="homepage_body">
+		<h1>Need some song inspo?  We've got you covered!</h1>
+		<h2>Input any genre of music.</h2>
+		
+		<form action="/results" method="post">
+			<input type="text" name="genre">
+			<button value="submit">Submit</button>
+		</form>
+		<form action="/results" method="post">
+			<label>Or, click here to generate a random genre.</label>
+			<button value="submit">Random genre!</button>
+		</form>
+		<div class="stuck">
+			<h3>Stuck?  Here are some of our favorite genres:</h3>
+			<div id="list">
+				<ul class="stuck">
+					<li class="left-of-left" id="disappear">barbershop</li>
+					<li class="left-of-left">old school hip hop</li>
+					<li class="left-of-left" id="disappear">big band</li>
+					<li class="left-of-left">bossa nova jazz</li>
+					<li class="left-of-left" id="disappear">girl group</li>
+					<li class="left-of-left">motown</li>
+					<li class="left-of-left" id="disappear">movie tunes</li>
+					<li class="left-of-left">dance pop</li>
+					<li class="left-of-left" id="disappear">a cappella</li>
+					<li class="left-of-left">classic rock</li>
+					<li class="left-of-left" id="disappear">doo-wop</li>
+					<li class="left-of-left">gangster rap</li>
+					<li class="left-of-left" id="disappear">country blues</li>
+					<li class="left-of-left"id="disappear">deep surf music</li>
+					<li class="left-of-left"id="disappear">acoustic pop</li>
+					<li class="left-of-left">indian classical</li>
+				</ul>
+			</div>
+<!-- 			<h5>Find the complete genre list <a href="list_genres.erb">here</a></h5> -->
+		</div>
+		<p id="foot-text">Made by Marco Heincrichs, Patrick Huang, Duncan McConnell, and Chiara Nilsson-Salvati</p>
+	</body>
+</html>

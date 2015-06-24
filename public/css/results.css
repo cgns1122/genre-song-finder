@@ -1,0 +1,121 @@
+body {
+  background-color: #a00fa8;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', arial;
+  white-space: nowrap;
+}
+
+h5 {
+	font-size: 1em;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: 200;
+	white-space: normal;
+}
+
+h3.pick-genre-text {
+	text-align: center;
+	width: 40%;
+	margin-top: 20%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+div.pick-genre-text {
+	display: inline-block;
+	text-align: center;
+}
+
+p#explicit {
+	font-size: 15px;
+	line-height: 0.72em;
+	display: inline;
+}
+
+li#sim-genres-list {
+	width: 25%;
+	float: left;
+	font-weight: lighter;
+	list-style-type: none;
+}
+
+#mega{
+	position: relative;
+}
+
+div#standard{
+	border-style: double;
+	border-color: white;
+	width: 868px;
+	height: 440px;
+	padding:3px;
+	margin: auto;
+	padding-bottom: 20em;
+}
+
+iframe {
+	width: 840px;
+	height: 630px;
+}
+
+@media screen and (max-width: 415px) {
+	iframe {
+		width: 310px;
+		height: 232px;
+	}
+	div#standard {
+		width: 320px;
+		height: 65px;
+	}
+	li#sim-genres-list {
+		width: 50%;
+	}
+	body, p#explicit {
+		font-size: 85%;
+	}
+}
+
+@media screen and (min-width: 415px) and (max-width: 550px) {
+	iframe {
+		width: 390px;
+		height: 292px;
+	}
+	div#standard {
+		width: 410px;
+		height: 98px;
+	}
+	li#sim-genres-list {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+	iframe {
+		width: 420px;
+		height: 315px;
+	}
+	div#standard {
+		width: 445px;
+		height: 145px;
+	}
+	li#sim-genres-list {
+		width: 50%;
+	}
+	body, p#explicit {
+		font-size: 90%;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+	iframe {
+		width: 533.3333px;
+		height: 400px;
+	}
+	div#standard {
+		width: 558px;
+		height: 210px;
+	}
+}
+/*width="420" height="315"
+multiply height by 1.33333333 to get proportional width*/

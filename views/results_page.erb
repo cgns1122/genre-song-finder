@@ -1,0 +1,44 @@
+<!doctype html>
+  <head>
+    <title> Results </title>
+    <link rel="shortcut icon" href="images/note.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/results.css">
+  </head>
+  <body>
+  	<h1>Results for <%=@genre_is%></h1>
+  	<h5><%=@descrip%></h5>
+  <div id="mega">
+    <%@both.each_value do |hash|%>
+		
+		<div id="standard">
+    		<h3><%=hash[:song].song_name%></h3>
+    		<p id="artist">This song is by <%=hash[:song].artist_name%></p>
+    		<% if hash[:song].explicit ==true %>
+    		<p id="explicit">This song is explicit.</p>
+    		<%end%>
+    		<br>
+ 			<iframe src="https://www.youtube.com/embed/<%= hash[:video].video_watch_code %>"frameborder="0" allowfullscreen></iframe>
+ 		</div>
+ 		<div id="break"><br></div>
+    <%end%>
+    <h3>You may also enjoy:</h3>
+    <ul>
+    <%@sim_genres.each do |genre|%>
+    	<li id="sim-genres-list"><%=genre[:name]%></li>
+    <%end%>
+	</ul>
+    <form action="/results" method="post">
+    	<label>Pick another genre!</label>
+    	<br>
+		<input type="text" name="genre">
+		<input type="submit">
+	</form>
+	<br>
+	<form action="/results" method="post">
+			<label>And now for something completely different.</label>
+			<button value="submit">Random genre!</button>
+		</form>
+   </div>
+  </body>
+</html>
